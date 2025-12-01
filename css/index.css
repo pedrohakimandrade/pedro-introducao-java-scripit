@@ -10,4 +10,25 @@
 			titulo.textContent = "Aparecida Nutricionista";
 
 		</script>
-elemento de ma
+elemento de ma+2
+-2
+Lines changed: 2 additions & 2 deletions
+Original file line number	Diff line number	Diff line change
+@@ -11,7 +11,7 @@
+
+		<header>
+			<div class="container">
+				<h1>Aparecida Nutrição</h1>
+				<h1 class="titulo" >Aparecida Nutrição</h1>
+			</div>
+		</header>
+		<main>
+@@ -73,7 +73,7 @@ <h2>Meus pacientes</h2>
+		</main>
+
+		<script> 
+			var titulo = document.querySelector("h1");
+			var titulo = document.querySelector(".titulo");
+
+			//console.log(titulo);
+			
