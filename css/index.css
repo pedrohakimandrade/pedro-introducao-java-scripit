@@ -1,3 +1,30 @@
-	//console.log(titulo);
-					</tr>					</thead>					<tbody id="tabela-pacientes">						<tr class="paciente" >						<tr class="paciente" id="primeiro-paciente" >							<td class="info-nome">Paulo</td>							<td class="info-peso">100</td>							<td class="info-altura">2.00</td>@@ -73,13 +73,7 @@ <h2>Meus pacientes</h2>		</main>		<script> 			var titulo = document.querySelector(".titulo");			//console.log(titulo);			//console.log(titulo.textContent);			titulo.textContent = "Aparecida Nutricionista";			src="js/principal.js"		</script>	</body>
-Collapse file‎js/principal.js‎Copy file name to clipboard+4Lines changed: 4 additions & 0 deletionsOriginal file line numberDiff line numberDiff line change@@ -0,0 +1,4 @@var titulo = document.querySelector(".titulo");titulo.textContent = "Aparecida Nutricionista";/*  IMC = massa/altura^2    */
+ chatitulo.textContent = "Aparecida Nutricionista";
+
+/*  IMC = massa/altura^2    */
+var paciente = document.querySelector("#primeiro-paciente");
+var tdPeso = document.querySelector(".info-peso");
+var peso = tdPeso.textContent;
+var tdAltura = document.querySelector(".info-altura");
+var altura = tdAltura.textContent;
+var imc = peso / (altura*altura);
+
+console.log(paciente);  //tr
+console.log(tdPeso);    // td que tem peso
+console.log(tdAltura);  //td que tem altura
+console.log(peso);      //valor do peso
+console.log(altura);    //valor da altura
+
+var tdImc = paciente.querySelector(".info-imc");
+tdImc.textContent = imc;
+
+
+
+
+
+
+
+
+
+
+
+
